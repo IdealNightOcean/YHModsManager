@@ -601,7 +601,7 @@ class MyPlugin(FeaturePlugin):
 
 ## 示例插件和打包工具
 
-> 📦 **示例仓库**：[待补充仓库地址]
+> 📦 **示例仓库**：[YHModsManagerPlugins](https://github.com/IdealNightOcean/YHModsManagerPlugins)
 
 示例仓库包含：
 

@@ -267,6 +267,7 @@ class MyPlugin(FeaturePlugin):
 ```
 
 > 📖 **详细开发指南**：[插件开发文档](docs/PLUGIN_DEVELOPMENT.md)
+> 📦 **示例插件仓库**：[YHModsManagerPlugins](https://github.com/IdealNightOcean/YHModsManagerPlugins) - 可前往查看借鉴
 
 ---
 
@@ -325,7 +326,7 @@ YHModsManager/
 
 ## 参与贡献
 
-欢迎参与开发、提问题或给建议！
+欢迎参与开发、提问题或给建议！作者对开源项目管理经验有限，如有不足之处还请多多包涵。
 
 - **提问题**：通过 [Issues](https://github.com/IdealNightOcean/YHModsManager/issues) 提交问题
 - **提建议**：通过 [Issues](https://github.com/IdealNightOcean/YHModsManager/issues) 提交功能建议
