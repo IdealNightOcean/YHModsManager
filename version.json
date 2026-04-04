@@ -1,0 +1,39 @@
+{
+  "latest_version": "1.0.0",
+  "release_date": "2026-04-03",
+  "release_notes": "初始版本发布",
+  "changelog_url": "https://github.com/IdealNightOcean/YHModsManager/releases",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2024-01-01",
+      "changes": [
+        "初始版本发布",
+        "支持多游戏Mod管理",
+        "拖拽排序功能",
+        "依赖关系可视化",
+        "配置方案管理"
+      ]
+    }
+  ],
+  "platforms": {
+    "windows": {
+      "download_url": "https://github.com/IdealNightOcean/YHModsManager/releases/download/v1.0.0/YHModsManager_v1.0.0_Windows.zip",
+      "file_size": 45000000,
+      "file_name": "YHModsManager_v1.0.0_Windows.zip",
+      "checksum": ""
+    },
+    "linux": {
+      "download_url": "",
+      "file_size": 0,
+      "file_name": "",
+      "checksum": ""
+    },
+    "macos": {
+      "download_url": "",
+      "file_size": 0,
+      "file_name": "",
+      "checksum": ""
+    }
+  }
+}

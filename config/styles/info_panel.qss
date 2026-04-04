@@ -1,0 +1,124 @@
+/* ========================================
+   信息面板样式
+   ======================================== */
+
+/* 信息面板容器 */
+InfoPanel {
+    background-color: ${colors.surface};
+}
+
+/* 信息面板标题 */
+QLabel[labelType="info_title"] {
+    color: ${colors.accent};
+    padding: 8px;
+    background-color: ${colors.surface_light};
+    border-radius: ${border_radius.card}px;
+    border: 1px solid ${colors.border};
+}
+
+QLabel[labelType="info_name"] {
+    font-weight: bold;
+}
+
+QLabel[labelType="dep_label"] {
+    color: ${colors.text_secondary};
+    font-weight: bold;
+    padding: 2px;
+}
+
+QLabel[labelType="original_name"] {
+    color: ${colors.text_secondary};
+    padding-left: 66px;
+}
+
+QLabel[labelType="no_tags"] {
+    color: ${colors.text_secondary};
+    padding: 4px;
+}
+
+QLabel[labelType="dep_normal"] {
+    color: ${colors.text};
+    background-color: transparent;
+    border: none;
+}
+
+QLabel[labelType="dep_missing"] {
+    color: ${colors.error};
+    background-color: transparent;
+    border: none;
+}
+
+QLabel[labelType="description"] {
+    color: ${colors.text};
+}
+
+/* 依赖项行 */
+QWidget[widgetType="dep_row"] {
+    background-color: ${colors.surface_lighter};
+    border: 1px solid ${colors.border};
+    border-radius: 4px;
+    font-size: ${font_size_large}px;
+}
+
+QWidget[widgetType="dep_row"]:hover {
+    border-color: ${colors.accent};
+}
+
+QWidget[widgetType="dep_row"][isMissing="true"] {
+    background-color: ${colors.error_light};
+    border: 1px solid ${colors.error};
+}
+
+/* 笔记编辑框 */
+QTextEdit[textEditType="note_edit"] {
+    background-color: ${colors.surface_lighter};
+    border: 1px solid ${colors.border};
+    border-radius: 4px;
+    padding: 6px;
+    color: ${colors.text};
+}
+
+QTextEdit[textEditType="note_edit"]:focus {
+    border-color: ${colors.accent};
+}
+
+/* 信息面板滚动区域 */
+QScrollArea[scrollAreaType="info_panel"] {
+    background-color: transparent;
+    border: none;
+}
+
+QScrollArea[scrollAreaType="info_panel"] > QWidget > QWidget {
+    background-color: transparent;
+}
+
+/* 信息面板滚动内容 */
+QWidget[widgetType="info_scroll_content"] {
+    background-color: transparent;
+    font-size: ${font_size_base}px;
+}
+
+/* 透明容器 */
+QWidget[widgetType="transparent_container"] {
+    background-color: transparent;
+}
+
+/* 类型容器 */
+QWidget[widgetType="type_container"] {
+    background-color: transparent;
+}
+
+/* 游戏版本容器 */
+QWidget[widgetType="game_versions_container"] {
+    background-color: transparent;
+}
+
+/* 作者容器 */
+QWidget[widgetType="authors_container"] {
+    background-color: transparent;
+}
+
+/* 标签容器 */
+QWidget[widgetType="tags_container"] {
+    background-color: transparent;
+}

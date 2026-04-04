@@ -1,0 +1,12 @@
+/* ========================================
+   Toast提示样式
+   ======================================== */
+
+ToastWidget {
+    background-color: transparent;
+}
+
+/* Toast标签 */
+QLabel[labelType="toast"] {
+    color: ${colors.white};
+}

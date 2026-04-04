@@ -1,0 +1,146 @@
+{
+  "qt_translations": {
+    "zh_CN": "qtbase_zh_CN",
+    "zh_TW": "qtbase_zh_TW",
+    "en_US": "qtbase_en",
+    "ja_JP": "qtbase_ja",
+    "ko_KR": "qtbase_ko",
+    "de_DE": "qtbase_de",
+    "fr_FR": "qtbase_fr",
+    "ru_RU": "qtbase_ru",
+    "default": "qtbase_en"
+  },
+  "fallback_colors": {
+    "tag_default": "#9CA3AF",
+    "dependency_colors": [
+      "#FF6B6B",
+      "#4ECDC4",
+      "#45B7D1",
+      "#96CEB4",
+      "#FFEAA7"
+    ]
+  },
+  "toast": {
+    "default_duration": 2000,
+    "default_fade_duration": 300,
+    "default_border_radius": 6,
+    "default_padding": 8,
+    "default_font_size": 12,
+    "default_bg_alpha": 220
+  },
+  "mod_list_item": {
+    "status_bar_width": 4,
+    "order_box_width": 28,
+    "order_box_height": 20,
+    "info_box_padding": 8,
+    "box_spacing": 6,
+    "border_radius": 6,
+    "order_font_size": 9,
+    "item_height": 32,
+    "box_height": 26
+  },
+  "dependency_lines": {
+    "item_height": 40,
+    "line_width": 0.8,
+    "highlight_line_width": 1.6,
+    "default_alpha": 200,
+    "highlight_alpha": 255,
+    "line_offset_step": 6,
+    "info_box_margin": 50,
+    "max_line_area_width": 56,
+    "scrollbar_width": 10,
+    "scrollbar_margin": 4,
+    "max_lines_in_area": 5,
+    "step_x": 10
+  },
+  "legend_widget": {
+    "item_height": 22,
+    "min_width": 140,
+    "collapsed_min_width": 40
+  },
+  "color_button": {
+    "size": 28
+  },
+  "info_panel": {
+    "min_width": 280,
+    "max_width": 450,
+    "preview_image_max_height": 200,
+    "tag_button_height": 24,
+    "tag_combo_min_width": 150,
+    "custom_name_label_min_width": 60,
+    "form_label_min_width": 70,
+    "note_edit_max_height": 80,
+    "form_spacing": 6,
+    "main_spacing": 10,
+    "margin": 8
+  },
+  "list_panel": {
+    "type_filter_min_width": 80,
+    "filter_mode_btn_size": 28,
+    "margin": 8
+  },
+  "toolbar": {
+    "margin_spacer_width": 8
+  },
+  "settings_dialog": {
+    "nav_list_min_width": 300,
+    "content_min_width": 300,
+    "font_btn_width": 32,
+    "font_btn_height": 32,
+    "min_width": 800,
+    "min_height": 500
+  },
+  "game_settings_dialog": {
+    "main_min_width": 700,
+    "game_item_min_width": 500
+  },
+  "validation_result_dialog": {
+    "min_width": 550
+  },
+  "missing_mods_dialog": {
+    "min_width": 550
+  },
+  "profile_bar": {
+    "profile_combo_min_width": 200
+  },
+  "main_window": {
+    "min_width": 1200,
+    "min_height": 700,
+    "lists_splitter_sizes": [
+      300,
+      500,
+      160
+    ],
+    "content_splitter_sizes": [
+      400,
+      900
+    ]
+  },
+  "mod_update_view": {
+    "min_width": 800,
+    "min_height": 500
+  },
+  "icon_sizes": {
+    "tiny": 12,
+    "small": 14,
+    "medium": 16,
+    "large": 20,
+    "xlarge": 24
+  },
+  "font_sizes": {
+    "tiny": -4,
+    "small": -2,
+    "base": 0,
+    "medium": 1,
+    "large": 2,
+    "title": 4,
+    "display": 8
+  },
+  "debounce": {
+    "search_delay": 300,
+    "dependency_update_delay": 5,
+    "validate_delay": 8,
+    "dependency_lines_delay": 16,
+    "default_delay": 100
+  }
+}

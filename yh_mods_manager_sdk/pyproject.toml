@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yh_mods_manager_sdk"
+version = "1.0.0"
+description = "Plugin SDK for YH Mods Manager - Develop plugins without main application source code"
+readme = "README.md"
+license = { text = "AGPL v3" }
+requires-python = ">=3.10"
+authors = [
+    { name = "NightOcean" }
+]
+keywords = [
+    "plugin",
+    "sdk",
+    "mod-manager",
+    "game",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: AGPL v3 License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Games/Entertainment",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/IdealNightOcean/YHModsManager"
+Documentation = "https://github.com/IdealNightOcean/YHModsManager#readme"
+Repository = "https://github.com/IdealNightOcean/YHModsManager.git"
+
+[tool.setuptools]
+packages = ["yh_mods_manager_sdk"]
+
+[tool.setuptools.package-dir]
+yh_mods_manager_sdk = "."
+
+[tool.setuptools.package-data]
+yh_mods_manager_sdk = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

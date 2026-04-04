@@ -1,0 +1,24 @@
+/* ========================================
+   分组框样式
+   ======================================== */
+
+QGroupBox {
+    background-color: ${colors.surface_light};
+    border: 1px solid ${colors.border};
+    border-radius: ${border_radius.group_box}px;
+    margin-top: 12px;
+    padding-top: 12px;
+    font-size: ${font_size_large}px;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    background-color: ${colors.surface_light};
+    border-radius: ${border_radius.button}px;
+    color: ${colors.accent};
+    font-size: ${font_size_large}px;
+    font-weight: bold;
+}

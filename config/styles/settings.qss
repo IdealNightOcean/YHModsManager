@@ -1,0 +1,249 @@
+/* ========================================
+   设置对话框样式
+   ======================================== */
+
+/* 设置导航列表 */
+QListWidget[listType="settings_nav"] {
+    background-color: ${colors.surface};
+    border: 1px solid ${colors.border};
+    border-radius: ${border_radius.list_container}px;
+    padding: 4px;
+    outline: none;
+    font-size: ${font_size_base}px;
+}
+
+QListWidget[listType="settings_nav"]::item {
+    background-color: transparent;
+    border: none;
+    border-radius: ${border_radius.list_item}px;
+    padding: 10px 16px;
+    margin: 2px 0px;
+    color: ${colors.text};
+}
+
+QListWidget[listType="settings_nav"]::item:hover {
+    background-color: ${colors.surface_hover};
+}
+
+QListWidget[listType="settings_nav"]::item:selected {
+    background-color: ${colors.accent};
+    color: ${colors.white};
+}
+
+/* 设置堆栈容器 */
+QStackedWidget[widgetType="settings_stack"] {
+    background-color: ${colors.surface};
+    border: 1px solid ${colors.border};
+    border-radius: ${border_radius.window}px;
+}
+
+/* 设置信息标签 */
+QLabel[labelType="settings_info"] {
+    color: ${colors.text_secondary};
+    font-size: ${font_size_small}px;
+}
+
+QLabel[labelType="settings_title"] {
+    font-weight: bold;
+    font-size: ${font_size_title}px;
+}
+
+QLabel[labelType="settings_form_label"] {
+    font-size: ${font_size_base}px;
+}
+
+/* 颜色预览按钮 */
+QPushButton[buttonType="color_preview"] {
+    border: 1px solid ${colors.border};
+    border-radius: 4px;
+}
+
+/* 标签组合框 */
+QComboBox[comboBoxType="tag"] {
+    background-color: ${colors.surface_light};
+    border: 1px solid ${colors.border};
+    border-radius: ${border_radius.button}px;
+    padding: 6px 12px;
+    color: ${colors.text};
+    font-size: ${font_size_base}px;
+}
+
+QComboBox[comboBoxType="tag"]:hover {
+    border-color: ${colors.border_light};
+}
+
+QComboBox[comboBoxType="tag"] QAbstractItemView {
+    background-color: ${colors.surface_light};
+    border: 1px solid ${colors.border};
+    border-radius: ${border_radius.menu}px;
+    selection-background-color: ${colors.accent};
+    padding: 4px;
+}
+
+/* 标签输入框 */
+QLineEdit[inputType="tag"] {
+    background-color: ${colors.surface_light};
+    border: 1px solid ${colors.border};
+    border-radius: ${border_radius.input}px;
+    padding: 6px 12px;
+    color: ${colors.text};
+    font-size: ${font_size_base}px;
+}
+
+QLineEdit[inputType="tag"]:focus {
+    border-color: ${colors.border_focus};
+}
+
+/* 标签容器 */
+QWidget[widgetType="tags_container"] {
+    background-color: transparent;
+}
+
+/* ========================================
+   启用/禁用切换控件样式
+   ======================================== */
+
+QWidget[widgetType="enable_toggle"] {
+    border: 2px solid ${colors.success};
+    border-radius: 6px;
+}
+
+QWidget[widgetType="enable_toggle"][toggleState="enabled"] {
+    background-color: ${colors.surface_lighter};
+    border-color: ${colors.success};
+}
+
+QWidget[widgetType="enable_toggle"][toggleState="disabled"] {
+    background-color: ${colors.surface_light};
+    border-color: ${colors.error};
+}
+
+QWidget[widgetType="enable_toggle"][hoverState="true"] {
+    background-color: ${colors.surface_hover};
+}
+
+QWidget[widgetType="enable_toggle"] QLabel {
+    background: transparent;
+    border: none;
+}
+
+QLabel[labelType="toggle_text"] {
+    font-weight: 500;
+    background: transparent;
+}
+
+QLabel[labelType="toggle_text"][toggleState="enabled"] {
+    color: ${colors.success};
+}
+
+QLabel[labelType="toggle_text"][toggleState="disabled"] {
+    color: ${colors.error};
+}
+
+/* ========================================
+   颜色预览按钮样式
+   ======================================== */
+
+QPushButton[buttonType="color_preview"] {
+    border: 1px solid ${colors.border};
+    border-radius: 4px;
+}
+
+QPushButton[buttonType="color_preview"]:hover {
+    border-color: ${colors.accent};
+}
+
+/* ========================================
+   关于对话框样式
+   ======================================== */
+
+QLabel[labelType="about_title"] {
+    font-size: ${font_size_display}px;
+    font-weight: bold;
+    color: ${colors.text};
+}
+
+QLabel[labelType="about_version"] {
+    font-size: ${font_size_large}px;
+    color: ${colors.text_secondary};
+}
+
+QLabel[labelType="about_description"] {
+    font-size: ${font_size_medium}px;
+    color: ${colors.text_secondary};
+}
+
+QLabel[labelType="about_info_label"] {
+    font-size: ${font_size_medium}px;
+    color: ${colors.text_secondary};
+}
+
+QLabel[labelType="about_info_value"] {
+    font-size: ${font_size_medium}px;
+    color: ${colors.text};
+    font-weight: 500;
+}
+
+QLabel[labelType="about_link"] {
+    font-size: ${font_size_medium}px;
+    color: ${colors.accent};
+    text-decoration: underline;
+}
+
+QLabel[labelType="about_link"]:hover {
+    color: ${colors.accent_hover};
+}
+
+/* ========================================
+   更新对话框样式
+   ======================================== */
+
+QLabel[labelType="dialog_title"] {
+    font-size: ${font_size_title}px;
+    font-weight: bold;
+    color: ${colors.text};
+}
+
+QLabel[labelType="dialog_status"] {
+    font-size: ${font_size_base}px;
+    color: ${colors.text};
+}
+
+QLabel[labelType="dialog_status_success"] {
+    font-size: ${font_size_base}px;
+    color: ${colors.success};
+    font-weight: 500;
+}
+
+QLabel[labelType="update_info"] {
+    font-size: ${font_size_base}px;
+    color: ${colors.text};
+}
+
+QLabel[labelType="changelog_version"] {
+    font-size: ${font_size_title}px;
+    font-weight: bold;
+    color: ${colors.accent};
+}
+
+QLabel[labelType="changelog_date"] {
+    font-size: ${font_size_small}px;
+    color: ${colors.text_secondary};
+}
+
+QLabel[labelType="changelog_item"] {
+    font-size: ${font_size_base}px;
+    color: ${colors.text};
+}
+
+QScrollArea[scrollAreaType="changelog"] {
+    background-color: ${colors.surface};
+    border: 1px solid ${colors.border};
+    border-radius: ${border_radius.window}px;
+}
+
+QLabel[labelType="settings_subtitle"] {
+    font-size: ${font_size_base}px;
+    font-weight: bold;
+    color: ${colors.text};
+}

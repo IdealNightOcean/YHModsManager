@@ -1,0 +1,87 @@
+/* ========================================
+   徽章样式
+   ======================================== */
+
+/* 版本徽章 */
+QLabel[badgeType="version"] {
+    background-color: ${colors.surface_lighter};
+    color: ${colors.text_secondary};
+    border: 1px solid ${colors.border};
+    border-radius: ${border_radius.badge}px;
+    padding: 2px 8px;
+    font-size: ${font_size_base}px;
+    font-weight: normal;
+    min-height: 18px;
+}
+
+/* 作者徽章 */
+QLabel[badgeType="author"] {
+    background-color: ${colors.surface_lighter};
+    color: ${colors.text_secondary};
+    border: 1px solid ${colors.border};
+    border-radius: ${border_radius.badge}px;
+    padding: 2px 8px;
+    font-size: ${font_size_base}px;
+    font-weight: normal;
+    min-height: 18px;
+}
+
+/* 官方标签徽章 */
+QLabel[badgeType="official_tag"] {
+    background-color: ${colors.surface_lighter};
+    color: ${colors.text_secondary};
+    border: 1px solid ${colors.border};
+    border-radius: ${border_radius.badge}px;
+    padding: 2px 8px;
+    font-size: ${font_size_base}px;
+    font-weight: normal;
+    min-height: 18px;
+}
+
+/* 游戏本体类型徽章 */
+QLabel[badgeType="type_core"] {
+    background-color: ${colors.game_base};
+    color: ${colors.white};
+    border: none;
+    border-radius: ${border_radius.badge}px;
+    padding: 2px 8px;
+    font-size: ${font_size_base}px;
+    font-weight: bold;
+    min-height: 18px;
+}
+
+/* 官方DLC类型徽章 */
+QLabel[badgeType="type_dlc"] {
+    background-color: ${colors.official_dlc};
+    color: ${colors.white};
+    border: none;
+    border-radius: ${border_radius.badge}px;
+    padding: 2px 8px;
+    font-size: ${font_size_base}px;
+    font-weight: bold;
+    min-height: 18px;
+}
+
+/* 工坊Mod类型徽章 */
+QLabel[badgeType="type_workshop"] {
+    background-color: ${colors.workshop_mod};
+    color: ${colors.white};
+    border: none;
+    border-radius: ${border_radius.badge}px;
+    padding: 2px 8px;
+    font-size: ${font_size_base}px;
+    font-weight: bold;
+    min-height: 18px;
+}
+
+/* 本地Mod类型徽章 */
+QLabel[badgeType="type_local"] {
+    background-color: ${colors.surface_lighter};
+    color: ${colors.text_secondary};
+    border: 1px solid ${colors.border};
+    border-radius: ${border_radius.badge}px;
+    padding: 2px 8px;
+    font-size: ${font_size_base}px;
+    font-weight: normal;
+    min-height: 18px;
+}

@@ -1,0 +1,259 @@
+/* ========================================
+   按钮组件样式
+   ======================================== */
+
+/* 标准按钮 */
+QPushButton[buttonType="standard"] {
+    background-color: ${colors.surface_light};
+    border: 1px solid ${colors.border};
+    border-radius: ${border_radius.button}px;
+    padding: 6px 14px;
+    color: ${colors.text};
+    font-size: ${font_size_base}px;
+    font-weight: 500;
+}
+
+QPushButton[buttonType="standard"]:hover {
+    background-color: ${colors.surface_hover};
+    border-color: ${colors.border_light};
+}
+
+QPushButton[buttonType="standard"]:pressed {
+    background-color: ${colors.surface_lighter};
+    border-color: ${colors.border_light};
+}
+
+QPushButton[buttonType="standard"]:disabled {
+    background-color: ${colors.surface};
+    border-color: ${colors.border};
+    color: ${colors.text_disabled};
+}
+
+/* 强调按钮 */
+QPushButton[buttonType="accent"] {
+    background-color: ${colors.accent};
+    border: none;
+    border-radius: ${border_radius.button}px;
+    padding: 6px 12px;
+    color: ${colors.white};
+    font-size: ${font_size_base}px;
+    font-weight: bold;
+}
+
+QPushButton[buttonType="accent"]:hover {
+    background-color: ${colors.accent_hover};
+}
+
+QPushButton[buttonType="accent"]:pressed {
+    background-color: ${colors.accent_pressed};
+}
+
+/* 危险按钮 */
+QPushButton[buttonType="danger"] {
+    background-color: ${colors.error};
+    border: none;
+    border-radius: ${border_radius.button}px;
+    padding: 6px 14px;
+    color: ${colors.white};
+    font-size: ${font_size_base}px;
+    font-weight: 500;
+}
+
+QPushButton[buttonType="danger"]:hover {
+    background-color: ${colors.danger_hover};
+}
+
+QPushButton[buttonType="danger"]:pressed {
+    background-color: ${colors.error};
+}
+
+QPushButton[buttonType="danger"]:disabled {
+    background-color: ${colors.surface};
+    color: ${colors.text_disabled};
+}
+
+/* 工坊按钮 */
+QPushButton[buttonType="workshop"] {
+    background-color: ${colors.workshop_mod};
+    border: none;
+    border-radius: ${border_radius.button}px;
+    padding: 6px 12px;
+    color: ${colors.white};
+    font-size: ${font_size_base}px;
+}
+
+QPushButton[buttonType="workshop"]:hover {
+    background-color: ${colors.workshop_mod_hover};
+}
+
+QPushButton[buttonType="workshop"]:pressed {
+    background-color: ${colors.workshop_mod};
+}
+
+/* 全部启用按钮 */
+QPushButton[buttonType="enable_all"] {
+    background-color: ${colors.btn_enable_all};
+    border: 2px solid ${colors.btn_enable_all};
+    border-radius: ${border_radius.button}px;
+    padding: 5px 14px;
+    color: ${colors.white};
+    font-size: ${font_size_base}px;
+    font-weight: 600;
+}
+
+QPushButton[buttonType="enable_all"]:hover {
+    background-color: ${colors.btn_enable_all_hover};
+    border-color: ${colors.btn_enable_all_hover};
+}
+
+QPushButton[buttonType="enable_all"]:pressed {
+    background-color: ${colors.btn_enable_all_pressed};
+    border-color: ${colors.btn_enable_all_pressed};
+}
+
+QPushButton[buttonType="enable_all"]:disabled {
+    background-color: ${colors.surface};
+    border-color: ${colors.btn_enable_all};
+    color: ${colors.btn_enable_all};
+}
+
+/* 全部禁用按钮 */
+QPushButton[buttonType="disable_all"] {
+    background-color: ${colors.btn_disable_all};
+    border: 2px solid ${colors.btn_disable_all};
+    border-radius: ${border_radius.button}px;
+    padding: 5px 14px;
+    color: ${colors.white};
+    font-size: ${font_size_base}px;
+    font-weight: 600;
+}
+
+QPushButton[buttonType="disable_all"]:hover {
+    background-color: ${colors.btn_disable_all_hover};
+    border-color: ${colors.btn_disable_all_hover};
+}
+
+QPushButton[buttonType="disable_all"]:pressed {
+    background-color: ${colors.btn_disable_all_pressed};
+    border-color: ${colors.btn_disable_all_pressed};
+}
+
+QPushButton[buttonType="disable_all"]:disabled {
+    background-color: ${colors.surface};
+    border-color: ${colors.btn_disable_all};
+    color: ${colors.btn_disable_all};
+}
+
+/* 标签按钮 - 基础样式 */
+QPushButton[buttonType="tag"] {
+    color: ${colors.white};
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-weight: bold;
+}
+
+QPushButton[buttonType="tag"]:hover {
+    background-color: ${colors.error} !important;
+    border: 1px solid ${colors.danger_hover};
+}
+
+QPushButton[buttonType="tag"]:pressed {
+    background-color: ${colors.danger_hover} !important;
+}
+
+/* 透明按钮 */
+QPushButton[buttonType="transparent"] {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* 颜色按钮容器 */
+ColorButton {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+QPushButton[buttonType="color_picker"] {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* 清除颜色按钮 */
+QPushButton[buttonType="color_clear"] {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* 添加颜色按钮 */
+QPushButton[buttonType="color_add"] {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* 图标按钮 */
+QPushButton[buttonType="icon_btn"] {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
+
+QPushButton[buttonType="icon_btn"]:hover {
+    background-color: ${colors.surface_hover};
+    border-radius: 4px;
+}
+
+QPushButton[buttonType="icon_btn"]:disabled {
+    background-color: transparent;
+}
+
+QPushButton[buttonType="icon_btn"][isMissing="true"] {
+    background-color: transparent;
+}
+
+/* 删除颜色按钮 */
+QPushButton[buttonType="delete_color"] {
+    background-color: ${colors.error};
+    border: none;
+    border-radius: 6px;
+    color: ${colors.white};
+    font-size: ${font_size_tiny}px;
+    font-weight: bold;
+}
+
+QPushButton[buttonType="delete_color"]:hover {
+    background-color: ${colors.danger_hover};
+}
+
+/* 已复制按钮 */
+QPushButton[buttonType="copied"] {
+    background-color: ${colors.accent};
+    color: ${colors.white};
+    border: none;
+    border-radius: ${border_radius.button}px;
+    padding: 6px 14px;
+    font-size: ${font_size_base}px;
+}
+
+/* 链接按钮 */
+QPushButton[buttonType="link"] {
+    background-color: transparent;
+    border: none;
+    padding: 0 4px;
+    color: ${colors.accent};
+    font-size: ${font_size_base}px;
+    text-decoration: underline;
+}
+
+QPushButton[buttonType="link"]:hover {
+    color: ${colors.accent_hover};
+}
+
+QPushButton[buttonType="link"]:pressed {
+    color: ${colors.accent_pressed};
+}
