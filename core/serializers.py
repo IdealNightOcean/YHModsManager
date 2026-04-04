@@ -81,7 +81,7 @@ class ModCustomMetaSerializer(TypeSerializer):
         from yh_mods_manager_sdk.enum_types import ModIssueStatus
         from yh_mods_manager_sdk import ModCustomMeta
         ignored_issues_value = data.get("ignored_issues", 0)
-        ignored_issues = ModIssueStatus(ignored_issues_value) if ignored_issues_value else None
+        ignored_issues = ModIssueStatus(ignored_issues_value) if ignored_issues_value else ModIssueStatus.NORMAL
         return ModCustomMeta(
             tags=set(data.get("tags", [])),
             custom_color=data.get("custom_color"),

@@ -29,16 +29,20 @@ class ModCustomMeta:
             self.note = data["note"]
         if "ignored_issues" in data:
             value = data["ignored_issues"]
-            self.ignored_issues = ModIssueStatus(value) if value else None
-            if self.ignored_issues:
+            self.ignored_issues = ModIssueStatus(value) if value else ModIssueStatus.NORMAL
+            if self.ignored_issues != ModIssueStatus.NORMAL:
                 for issue in EnumExtension.PREDEFINE_MOD_ISSUES_STATUS:
                     if self.ignored_issues.has_issue(issue):
                         self.ignored_issues_set.add(issue)
 
     def is_issue_ignored(self, issue: "ModIssueStatus") -> bool:
+        if self.ignored_issues is None:
+            return False
         return self.ignored_issues.has_issue(issue)
 
     def ignore_issue(self, issue: "ModIssueStatus") -> None:
+        if self.ignored_issues is None:
+            self.ignored_issues = ModIssueStatus.NORMAL
         self.ignored_issues |= issue
         self.ignored_issues_set.add(issue)
 
@@ -263,4 +267,5 @@ class Mod:
         return False
 
     def has_any_visible_issue(self) -> bool:
-        return bool(self.issue_status ^ self.custom_meta.ignored_issues)
+        ignored = self.custom_meta.ignored_issues or ModIssueStatus.NORMAL
+        return bool(self.issue_status ^ ignored)
