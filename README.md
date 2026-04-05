@@ -4,6 +4,8 @@
 
 [![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE) [![Python](https://img.shields.io/badge/Python-3.12+-green.svg)](https://www.python.org/)
 
+[English Documentation](README_EN.md)
+
 <div align="center">
 
 ![主界面演示](docs/images/介绍.gif)
@@ -269,7 +271,7 @@ class MyPlugin(FeaturePlugin):
             print("Action triggered!")
 ```
 
-> 📖 **详细开发指南**：[插件开发文档](docs/PLUGIN_DEVELOPMENT.md)
+> 📖 **详细开发指南**：[插件开发文档](docs/插件开发指南.md)
 > 📦 **示例插件仓库**：[YHModsManagerPlugins](https://github.com/IdealNightOcean/YHModsManagerPlugins) - 可前往查看借鉴
 
 ---
