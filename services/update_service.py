@@ -332,7 +332,12 @@ class UpdateService:
             return self._prepare_linux_update()
 
     def _prepare_windows_update(self, new_exe: str, current_exe: str, app_dir: str, extract_dir: str, download_path: str) -> Tuple[bool, str]:
-        return True, "Update prepared. Restart required."
+        try:
+            self._create_windows_update_script(new_exe, current_exe, app_dir, extract_dir, download_path)
+            return True, "Update prepared. Restart required."
+        except Exception as e:
+            logger.error(f"Failed to create update script: {e}")
+            return False, str(e)
 
     @staticmethod
     def _prepare_macos_update() -> Tuple[bool, str]:
