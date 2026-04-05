@@ -2,9 +2,9 @@
 
 **不绑定特定游戏 · 插件驱动**
 
+[![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE) [![Python](https://img.shields.io/badge/Python-3.12+-green.svg)](https://www.python.org/)
+
 <div align="center">
-[![License](C:\Users\ideal\Desktop\License-AGPL v3-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.12+-green.svg)](https://www.python.org/)
 
 ![主界面演示](docs/images/介绍.gif)
 
