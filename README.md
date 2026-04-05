@@ -1,10 +1,9 @@
-# 夜海的多用模组管理工具 NightOcean's Mods Manager
+# 夜海泛用模组管理器 NightOcean's Mods Manager
+
+**不绑定特定游戏 · 插件驱动**
 
 <div align="center">
-
-**不绑定特定游戏 · 插件驱动 · 跨平台**
-
-[![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
+[![License](C:\Users\ideal\Desktop\License-AGPL v3-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.12+-green.svg)](https://www.python.org/)
 
 ![主界面演示](docs/images/介绍.gif)
@@ -27,13 +26,13 @@
 
 ## 简介
 
-夜海的多用模组管理工具是一款 **通用 Mod 管理工具**，采用 **插件驱动架构**，不绑定任何特定游戏，而是通过游戏插件来支持各种游戏。
+夜海泛用模组管理器是一款 **通用 Mod 管理工具**，采用 **插件驱动架构**，不绑定任何特定游戏，而是通过游戏插件来支持各种游戏。
 
 ### 核心特点
 
 | 特点 | 说明 |
 |------|------|
-| 一管理多游 | 一个管理器管理多款游戏的 Mod |
+| 一管多游 | 一个管理器管理多款游戏的 Mod |
 | 社区扩展 | 社区可为任意游戏开发支持插件 |
 | 功能扩展 | 功能可通过插件不断扩展 |
 
@@ -78,6 +77,8 @@
 
 > ⚠️ **注意**：对于直接覆盖游戏文件的"侵入式 Mod"，本工具无法很好地管理。
 
+> 我觉得这个工具的未来可期：未来如果能完善插件生态，对于那些独立小游戏，或是本身缺乏深度 Mod 管理支持的游戏来说，完全可以通过它快速实现外部的 Mod 顺序管理功能
+
 #### 使用建议
 
 - **单游戏场景**：如果只管理一款游戏且该游戏已有专用管理器，专用管理器可能功能更全面
@@ -120,7 +121,7 @@
 |------|------|
 | 双列表布局 | 左边未启用，右边已启用，一目了然 |
 | 拖拽排序 | 拖一拖就能调整加载顺序 |
-| 依赖关系可视化 | 用线条显示 Mod 之间的依赖关系 |
+| 依赖关系可视化 | 通过详细信息、高亮、依赖线条多种方式展示 Mod 之间的依赖关系 |
 | 信息面板 | 查看 Mod 详细信息、标签、备注等 |
 
 ![拖动排序](docs/images/拖动排序.gif)
@@ -133,8 +134,8 @@
 
 | 功能 | 说明 |
 |------|------|
-| 可视化线条 | 多种颜色表示不同依赖类型，红色表示有问题 |
-| 智能排序 | 按 Mod 声明的依赖关系自动调整顺序（仅供参考） |
+| 依赖关系可视化 | 通过详细信息、高亮、依赖线条多种方式展示 Mod 之间的依赖关系 |
+| 简单排序 | 可按 Mod 声明的依赖关系自动调整顺序（仅供参考） |
 | 问题检查 | 一键检测缺失依赖、顺序错误等问题 |
 
 ![依赖线查看](docs/images/依赖线查看.gif)
@@ -157,7 +158,7 @@
 |------|------|
 | 标签系统 | 给 Mod 加标签，筛选更方便 |
 | 颜色标记 | 给 Mod 标颜色，一眼就能认出来 |
-| 备注功能 | 给 Mod 加备注，记录心得 |
+| 备注功能 | 给 Mod 加备注，有时候还是昵称好记 |
 
 ![备注名](docs/images/备注名.gif)
 
@@ -330,8 +331,7 @@ YHModsManager/
 
 欢迎参与开发、提问题或给建议！作者对开源项目管理经验有限，如有不足之处还请多多包涵。
 
-- **提问题**：通过 [Issues](https://github.com/IdealNightOcean/YHModsManager/issues) 提交问题
-- **提建议**：通过 [Issues](https://github.com/IdealNightOcean/YHModsManager/issues) 提交功能建议
+- **问题和建议**：通过 [Issues](https://github.com/IdealNightOcean/YHModsManager/issues) 提交问题和功能建议
 - **提交代码**：欢迎提交 Pull Request
 
 ---
@@ -355,12 +355,4 @@ YHModsManager/
 
 ## 致谢
 
-感谢所有贡献者和支持者！
-
----
-
-<div align="center">
-
-**[提问题](https://github.com/IdealNightOcean/YHModsManager/issues)** · **[提建议](https://github.com/IdealNightOcean/YHModsManager/issues)**
-
-</div>
+**感谢所有贡献者和支持者！**
